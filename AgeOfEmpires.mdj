@@ -69282,12 +69282,13 @@
 																					"_parent": {
 																						"$ref": "AAAAAAGdiN2lZvyALnw="
 																					},
-																					"visible": false,
 																					"font": "Arial;13;0",
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 198,
-																					"height": 13
+																					"width": 90.30810546875,
+																					"height": 13,
+																					"text": "[error al validar]"
 																				}
 																			],
 																			"font": "Arial;13;0",
@@ -69295,9 +69296,44 @@
 																			"left": 8,
 																			"top": 183,
 																			"width": 704,
-																			"height": 43,
+																			"height": 81,
 																			"guardLabel": {
 																				"$ref": "AAAAAAGdiN2lZvyBMww="
+																			}
+																		},
+																		{
+																			"_type": "UMLInteractionOperandView",
+																			"_id": "AAAAAAGdiOsK0f07kmY=",
+																			"_parent": {
+																				"$ref": "AAAAAAGdiN2lVPx0xmg="
+																			},
+																			"model": {
+																				"$ref": "AAAAAAGdiOsKvf04PUo="
+																			},
+																			"subViews": [
+																				{
+																					"_type": "LabelView",
+																					"_id": "AAAAAAGdiOsK0f08DtU=",
+																					"_parent": {
+																						"$ref": "AAAAAAGdiOsK0f07kmY="
+																					},
+																					"font": "Arial;13;0",
+																					"parentStyle": true,
+																					"left": 28,
+																					"top": 279,
+																					"width": 120.681640625,
+																					"height": 13,
+																					"text": "[validación con éxito]"
+																				}
+																			],
+																			"font": "Arial;13;0",
+																			"parentStyle": true,
+																			"left": 8,
+																			"top": 264,
+																			"width": 704,
+																			"height": 43,
+																			"guardLabel": {
+																				"$ref": "AAAAAAGdiOsK0f08DtU="
 																			}
 																		}
 																	],
@@ -69306,7 +69342,7 @@
 																	"left": 8,
 																	"top": 183,
 																	"width": 704,
-																	"height": 43
+																	"height": 124
 																}
 															],
 															"font": "Arial;13;0",
@@ -69945,7 +69981,17 @@
 															"_parent": {
 																"$ref": "AAAAAAGdiN2lVPxvnOI="
 															},
-															"name": "Operand1"
+															"name": "Operand1",
+															"guard": "error al validar"
+														},
+														{
+															"_type": "UMLInteractionOperand",
+															"_id": "AAAAAAGdiOsKvf04PUo=",
+															"_parent": {
+																"$ref": "AAAAAAGdiN2lVPxvnOI="
+															},
+															"name": "InteractionOperand1",
+															"guard": "validación con éxito"
 														}
 													]
 												},
