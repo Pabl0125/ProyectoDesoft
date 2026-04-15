@@ -755,7 +755,7 @@
 									"parentStyle": true,
 									"left": 859,
 									"top": 1139.5,
-									"width": 90.919921875,
+									"width": 90,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUTWqF9AYNeg="
@@ -1197,7 +1197,7 @@
 									"parentStyle": true,
 									"left": 1232.5,
 									"top": 519.5,
-									"width": 117.6181640625,
+									"width": 117,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUTZogdCDyjs="
@@ -1418,7 +1418,7 @@
 									"parentStyle": true,
 									"left": 1230.5,
 									"top": 611.5,
-									"width": 108.25537109375,
+									"width": 108,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUTcxndC1k9A="
@@ -2342,7 +2342,7 @@
 									"parentStyle": true,
 									"left": 365,
 									"top": 487.5,
-									"width": 217.33984375,
+									"width": 217,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUToAk9KYtZI="
@@ -2804,7 +2804,7 @@
 									"parentStyle": true,
 									"left": 1124,
 									"top": 359.5,
-									"width": 135.0107421875,
+									"width": 134,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUUB0cddNS0c="
@@ -3025,7 +3025,7 @@
 									"parentStyle": true,
 									"left": 890,
 									"top": 279.5,
-									"width": 124.88623046875,
+									"width": 124,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUUdYbNhEMd8="
@@ -3246,7 +3246,7 @@
 									"parentStyle": true,
 									"left": 379.5,
 									"top": 619.5,
-									"width": 171.10986328125,
+									"width": 170,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUUx1jNna5CY="
@@ -3909,7 +3909,7 @@
 									"parentStyle": true,
 									"left": 1012,
 									"top": 767.5,
-									"width": 95.2236328125,
+									"width": 94,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUU5AT9ql0/8="
@@ -4130,7 +4130,7 @@
 									"parentStyle": true,
 									"left": 1157,
 									"top": 691.5,
-									"width": 101.736328125,
+									"width": 101,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcUWH5bdsuqjI="
@@ -7706,7 +7706,7 @@
 									"parentStyle": true,
 									"left": 602.5,
 									"top": 815.5,
-									"width": 126.32080078125,
+									"width": 125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcdUvq5v5zj+s="
@@ -7927,7 +7927,7 @@
 									"parentStyle": true,
 									"left": 807,
 									"top": 815.5,
-									"width": 108.96630859375,
+									"width": 108,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcdUwY8wBvXmI="
@@ -8897,9 +8897,9 @@
 											"fillColor": "#FFFF49",
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 826.5,
+											"left": 824,
 											"top": 68,
-											"width": 131,
+											"width": 118,
 											"height": 13,
 											"text": "Ser atacado por torre"
 										},
@@ -8938,9 +8938,9 @@
 									"fillColor": "#FFFF49",
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 821.5,
+									"left": 819,
 									"top": 61,
-									"width": 141.4853515625,
+									"width": 129.25341796875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGcdXDUnrYN5EU="
@@ -9052,7 +9052,7 @@
 							"containerChangeable": true,
 							"left": 792,
 							"top": 56,
-							"width": 200,
+							"width": 182,
 							"height": 35,
 							"autoResize": true,
 							"nameCompartment": {
@@ -9163,7 +9163,7 @@
 								"$ref": "AAAAAAGcdXDUnbYL2q4="
 							},
 							"lineStyle": 1,
-							"points": "871:92;753:199",
+							"points": "863:92;751:199",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGcdXGvsNMiRfE="
@@ -9459,7 +9459,7 @@
 								"$ref": "AAAAAAGcdXDUnbYL2q4="
 							},
 							"lineStyle": 1,
-							"points": "888:92;781:583",
+							"points": "879:92;780:583",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGckJxxOfdztwk="
@@ -9558,7 +9558,7 @@
 								"$ref": "AAAAAAGcdXDUnbYL2q4="
 							},
 							"lineStyle": 1,
-							"points": "920:92;1160:255",
+							"points": "912:92;1158:255",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGckJyFzv6wUbM="
@@ -10258,7 +10258,7 @@
 									"parentStyle": true,
 									"left": 583.5,
 									"top": 951.5,
-									"width": 112.57177734375,
+									"width": 112,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGdcSnt8kkMJVw="
@@ -22271,6 +22271,42 @@
 											"height": 13,
 											"text": "+solicitarMetodo()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGdkVOdN5sQ5zM=",
+											"_parent": {
+												"$ref": "AAAAAAGc4WH7Eat41Gc="
+											},
+											"model": {
+												"$ref": "AAAAAAGdiNwQmfvtvlo="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 389,
+											"top": 379,
+											"width": 187.06884765625,
+											"height": 13,
+											"text": "+validarTableroYJugadores()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGdkVOdN5sTq70=",
+											"_parent": {
+												"$ref": "AAAAAAGc4WH7Eat41Gc="
+											},
+											"model": {
+												"$ref": "AAAAAAGdiOb4H/znOsE="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 389,
+											"top": 394,
+											"width": 187.06884765625,
+											"height": 13,
+											"text": "+establecerTurnoPrimerJugador()",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
@@ -22278,7 +22314,7 @@
 									"left": 384,
 									"top": 119,
 									"width": 197.06884765625,
-									"height": 263
+									"height": 293
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -22321,7 +22357,7 @@
 							"left": 384,
 							"top": 56,
 							"width": 196.06884765625,
-							"height": 311,
+							"height": 356,
 							"nameCompartment": {
 								"$ref": "AAAAAAGc4WH7Eatyolc="
 							},
@@ -22360,7 +22396,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 579,
-									"top": 203,
+									"top": 218,
 									"width": 66.11083984375,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -22383,8 +22419,8 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 614,
-									"top": 218,
+									"left": 615,
+									"top": 233,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -22406,7 +22442,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 607,
-									"top": 174,
+									"top": 189,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -22428,7 +22464,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 615,
-									"top": 203,
+									"top": 218,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -22449,8 +22485,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 614,
-									"top": 216,
+									"left": 615,
+									"top": 231,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -22471,7 +22507,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 605,
-									"top": 175,
+									"top": 190,
 									"width": 21.68359375,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -22494,8 +22530,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 608,
-									"top": 204,
+									"left": 609,
+									"top": 219,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -22515,8 +22551,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 612,
-									"top": 217,
+									"left": 613,
+									"top": 232,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -22536,7 +22572,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": false,
 									"left": 597,
-									"top": 177,
+									"top": 193,
 									"width": 7.22998046875,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -22586,7 +22622,7 @@
 								"$ref": "AAAAAAGcmVUD5EZqMvM="
 							},
 							"lineStyle": 1,
-							"points": "639:191;581:199",
+							"points": "639:205;581:215",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGc4WH7Eat8tg8="
@@ -29926,6 +29962,42 @@
 															"height": 13,
 															"text": "+solicitarMetodo()",
 															"horizontalAlignment": 0
+														},
+														{
+															"_type": "UMLOperationView",
+															"_id": "AAAAAAGdkVOdP5sx+uI=",
+															"_parent": {
+																"$ref": "AAAAAAGc4WAruKLWpCM="
+															},
+															"model": {
+																"$ref": "AAAAAAGdiNwQmfvtvlo="
+															},
+															"font": "Arial;13;0",
+															"parentStyle": true,
+															"left": 389,
+															"top": 379,
+															"width": 187.06884765625,
+															"height": 13,
+															"text": "+validarTableroYJugadores()",
+															"horizontalAlignment": 0
+														},
+														{
+															"_type": "UMLOperationView",
+															"_id": "AAAAAAGdkVOdP5s0a9A=",
+															"_parent": {
+																"$ref": "AAAAAAGc4WAruKLWpCM="
+															},
+															"model": {
+																"$ref": "AAAAAAGdiOb4H/znOsE="
+															},
+															"font": "Arial;13;0",
+															"parentStyle": true,
+															"left": 389,
+															"top": 394,
+															"width": 187.06884765625,
+															"height": 13,
+															"text": "+establecerTurnoPrimerJugador()",
+															"horizontalAlignment": 0
 														}
 													],
 													"font": "Arial;13;0",
@@ -29933,7 +30005,7 @@
 													"left": 384,
 													"top": 119,
 													"width": 197.06884765625,
-													"height": 263
+													"height": 293
 												},
 												{
 													"_type": "UMLReceptionCompartmentView",
@@ -29974,7 +30046,7 @@
 											"left": 384,
 											"top": 56,
 											"width": 196.06884765625,
-											"height": 311,
+											"height": 356,
 											"nameCompartment": {
 												"$ref": "AAAAAAGc4WAruKLOdng="
 											},
@@ -30012,8 +30084,8 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 604,
-													"top": 220,
+													"left": 605,
+													"top": 234,
 													"width": 66.11083984375,
 													"height": 13,
 													"alpha": 1.5707963267948966,
@@ -30036,8 +30108,8 @@
 													"visible": null,
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 637,
-													"top": 235,
+													"left": 639,
+													"top": 249,
 													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 30,
@@ -30058,8 +30130,8 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 638,
-													"top": 190,
+													"left": 637,
+													"top": 205,
 													"height": 13,
 													"alpha": -1.5707963267948966,
 													"distance": 15,
@@ -30081,7 +30153,7 @@
 													"font": "Arial;13;0",
 													"parentStyle": false,
 													"left": 669,
-													"top": 219,
+													"top": 233,
 													"height": 13,
 													"alpha": 0.5235987755982988,
 													"distance": 30,
@@ -30102,8 +30174,8 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 666,
-													"top": 233,
+													"left": 668,
+													"top": 246,
 													"height": 13,
 													"alpha": 0.7853981633974483,
 													"distance": 40,
@@ -30123,8 +30195,8 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 663,
-													"top": 192,
+													"left": 662,
+													"top": 205,
 													"width": 21.68359375,
 													"height": 13,
 													"alpha": -0.5235987755982988,
@@ -30147,8 +30219,8 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 606,
-													"top": 219,
+													"left": 607,
+													"top": 236,
 													"height": 13,
 													"alpha": -0.5235987755982988,
 													"distance": 30,
@@ -30168,8 +30240,8 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 609,
-													"top": 233,
+													"left": 610,
+													"top": 249,
 													"height": 13,
 													"alpha": -0.7853981633974483,
 													"distance": 40,
@@ -30188,8 +30260,8 @@
 													},
 													"font": "Arial;13;0",
 													"parentStyle": false,
-													"left": 599,
-													"top": 192,
+													"left": 598,
+													"top": 209,
 													"width": 7.22998046875,
 													"height": 13,
 													"alpha": 0.5235987755982988,
@@ -30243,7 +30315,7 @@
 												"$ref": "AAAAAAGc4WArt6JMW7w="
 											},
 											"lineStyle": 1,
-											"points": "695:211;581:211",
+											"points": "695:223;581:229",
 											"showVisibility": true,
 											"nameLabel": {
 												"$ref": "AAAAAAGc4WAruKLafYY="
@@ -30617,6 +30689,24 @@
 															"height": 13,
 															"text": "+cargarTablero()",
 															"horizontalAlignment": 0
+														},
+														{
+															"_type": "UMLOperationView",
+															"_id": "AAAAAAGdkVOdQJs6bDI=",
+															"_parent": {
+																"$ref": "AAAAAAGc4Wa1Ds+Ta3M="
+															},
+															"model": {
+																"$ref": "AAAAAAGdiNr8rfu+6wQ="
+															},
+															"font": "Arial;13;0",
+															"parentStyle": true,
+															"left": 1293,
+															"top": 348,
+															"width": 178.35986328125,
+															"height": 13,
+															"text": "+crearPartida()",
+															"horizontalAlignment": 0
 														}
 													],
 													"font": "Arial;13;0",
@@ -30624,7 +30714,7 @@
 													"left": 1288,
 													"top": 163,
 													"width": 188.35986328125,
-													"height": 188
+													"height": 203
 												},
 												{
 													"_type": "UMLReceptionCompartmentView",
@@ -30667,7 +30757,7 @@
 											"left": 1288,
 											"top": 128,
 											"width": 187.35986328125,
-											"height": 223,
+											"height": 238,
 											"nameCompartment": {
 												"$ref": "AAAAAAGc4Wa1Dc+Ndh4="
 											},
@@ -32742,7 +32832,7 @@
 																	"visible": false,
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 88.72998046875,
+																	"left": 87.99365234375,
 																	"top": 309,
 																	"height": 13
 																},
@@ -32756,7 +32846,7 @@
 																	"parentStyle": true,
 																	"left": 69,
 																	"top": 309,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -33753,7 +33843,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGcvVlwnEOCamc="
 									},
-									"name": "Crear Partida viejo",
+									"name": "Crear Partida",
 									"ownedElements": [
 										{
 											"_type": "UMLInteraction",
@@ -38644,9 +38734,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -38660,7 +38750,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -38726,9 +38816,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 24.72998046875,
+																	"left": 22.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -38742,7 +38832,7 @@
 																	"parentStyle": true,
 																	"left": 5,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -41979,9 +42069,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 64.72998046875,
+																	"left": 63.99365234375,
 																	"top": 581,
-																	"width": 243.48974609375,
+																	"width": 221.3046875,
 																	"height": 13,
 																	"text": "Escenario Principal: Recursos y Celda OK"
 																},
@@ -41995,7 +42085,7 @@
 																	"parentStyle": true,
 																	"left": 45,
 																	"top": 581,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -42063,7 +42153,7 @@
 																					"parentStyle": true,
 																					"left": 60,
 																					"top": 1279,
-																					"width": 287.59326171875,
+																					"width": 262.46923828125,
 																					"height": 13,
 																					"text": "[Escenario Alt 01 / 02: Fallo en Recursos o Celda]"
 																				}
@@ -42978,9 +43068,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -42994,7 +43084,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -47376,9 +47466,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 304.72998046875,
+																	"left": 303.99365234375,
 																	"top": 325,
-																	"width": 221.86328125,
+																	"width": 201.830078125,
 																	"height": 13,
 																	"text": "Escenario Alt 1: Paisano no disponible"
 																},
@@ -47392,7 +47482,7 @@
 																	"parentStyle": true,
 																	"left": 285,
 																	"top": 325,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -47460,7 +47550,7 @@
 																					"parentStyle": true,
 																					"left": 300,
 																					"top": 401,
-																					"width": 116.35888671875,
+																					"width": 106.513671875,
 																					"height": 13,
 																					"text": "[Paisano disponible]"
 																				}
@@ -47518,9 +47608,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 320.72998046875,
+																	"left": 319.99365234375,
 																	"top": 493,
-																	"width": 182.8251953125,
+																	"width": 170.39013671875,
 																	"height": 13,
 																	"text": "Escenario Alt 2: Inventario lleno"
 																},
@@ -47534,7 +47624,7 @@
 																	"parentStyle": true,
 																	"left": 301,
 																	"top": 493,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -47602,7 +47692,7 @@
 																					"parentStyle": true,
 																					"left": 316,
 																					"top": 607,
-																					"width": 200.90966796875,
+																					"width": 184.48828125,
 																					"height": 13,
 																					"text": "[Paisano con inventario disponible]"
 																				}
@@ -47660,9 +47750,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 328.72998046875,
+																	"left": 327.99365234375,
 																	"top": 1309,
-																	"width": 206.6669921875,
+																	"width": 184.84375,
 																	"height": 13,
 																	"text": "Escenario Alt 4: Recursos agotados"
 																},
@@ -47676,7 +47766,7 @@
 																	"parentStyle": true,
 																	"left": 309,
 																	"top": 1309,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -48517,9 +48607,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -48533,7 +48623,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -49649,9 +49739,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 96.72998046875,
+																	"left": 95.99365234375,
 																	"top": 373,
-																	"width": 156.0888671875,
+																	"width": 139.33740234375,
 																	"height": 13,
 																	"text": "celdaDestino es transitable"
 																},
@@ -49665,7 +49755,7 @@
 																	"parentStyle": true,
 																	"left": 77,
 																	"top": 373,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -49699,7 +49789,7 @@
 																					"parentStyle": true,
 																					"left": 92,
 																					"top": 406,
-																					"width": 112.0107421875,
+																					"width": 104.177734375,
 																					"height": 13,
 																					"text": "[transitable == true]"
 																				}
@@ -49734,7 +49824,7 @@
 																					"parentStyle": true,
 																					"left": 92,
 																					"top": 759,
-																					"width": 117.06982421875,
+																					"width": 108.5068359375,
 																					"height": 13,
 																					"text": "[transitable == false]"
 																				}
@@ -52272,9 +52362,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -52288,7 +52378,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -54791,9 +54881,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 189,
-																	"width": 140.1943359375,
+																	"width": 130.69189453125,
 																	"height": 13,
 																	"text": "Alt 1: Partida no iniciada"
 																},
@@ -54807,7 +54897,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 189,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -54841,7 +54931,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 222,
-																					"width": 114.181640625,
+																					"width": 106.12646484375,
 																					"height": 13,
 																					"text": "[Partida no iniciada]"
 																				}
@@ -54876,7 +54966,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 265,
-																					"width": 96.10986328125,
+																					"width": 89.87646484375,
 																					"height": 13,
 																					"text": "[Partida iniciada]"
 																				}
@@ -54934,9 +55024,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 405,
-																	"width": 145.25341796875,
+																	"width": 130.32373046875,
 																	"height": 13,
 																	"text": "Menos de 2 participantes"
 																},
@@ -54950,7 +55040,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 405,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -54984,7 +55074,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 438,
-																					"width": 99.3662109375,
+																					"width": 92.1552734375,
 																					"height": 13,
 																					"text": "[<2 participantes]"
 																				}
@@ -55019,7 +55109,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 481,
-																					"width": 126.45166015625,
+																					"width": 116.6064453125,
 																					"height": 13,
 																					"text": "[Participantes válidos]"
 																				}
@@ -55077,9 +55167,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 541,
-																	"width": 83.8271484375,
+																	"width": 78.3427734375,
 																	"height": 13,
 																	"text": "Orden invalido"
 																},
@@ -55093,7 +55183,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 541,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -55127,7 +55217,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 574,
-																					"width": 91.05078125,
+																					"width": 87.0009765625,
 																					"height": 13,
 																					"text": "[Orden invalido]"
 																				}
@@ -55162,7 +55252,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 617,
-																					"width": 80.9326171875,
+																					"width": 76.88916015625,
 																					"height": 13,
 																					"text": "[Orden valido]"
 																				}
@@ -55220,9 +55310,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 717,
-																	"width": 94.173828125,
+																	"width": 87.28662109375,
 																	"height": 13,
 																	"text": "Turnos invalidos"
 																},
@@ -55236,7 +55326,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 717,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -55270,7 +55360,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 750,
-																					"width": 101.3974609375,
+																					"width": 95.94482421875,
 																					"height": 13,
 																					"text": "[Turnos invalidos]"
 																				}
@@ -55305,7 +55395,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 793,
-																					"width": 91.279296875,
+																					"width": 85.8330078125,
 																					"height": 13,
 																					"text": "[Turnos validos]"
 																				}
@@ -55868,9 +55958,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 24.72998046875,
+																	"left": 22.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -55884,7 +55974,7 @@
 																	"parentStyle": true,
 																	"left": 5,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -57122,9 +57212,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 87.9599609375,
+																	"left": 84.3291015625,
 																	"top": 261,
-																	"width": 122.1162109375,
+																	"width": 110.4873046875,
 																	"height": 13,
 																	"text": "CombinedFragment1"
 																},
@@ -57138,7 +57228,7 @@
 																	"parentStyle": true,
 																	"left": 61,
 																	"top": 261,
-																	"width": 20.9599609375,
+																	"width": 17.3291015625,
 																	"height": 13,
 																	"text": "seq"
 																},
@@ -57172,7 +57262,7 @@
 																					"parentStyle": true,
 																					"left": 76,
 																					"top": 294,
-																					"width": 236.29150390625,
+																					"width": 215.87109375,
 																					"height": 13,
 																					"text": "[comporobarIgualPosiciones return false]"
 																				}
@@ -57207,7 +57297,7 @@
 																					"parentStyle": true,
 																					"left": 76,
 																					"top": 399,
-																					"width": 224.00244140625,
+																					"width": 205.0419921875,
 																					"height": 13,
 																					"text": "[comprobarIgualPosiciones return true]"
 																				}
@@ -58116,10 +58206,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGdh30BdcaU8qA="
 											},
-											"name": "Role3",
-											"type": {
-												"$ref": "AAAAAAGdcYykPJeV4wQ="
-											}
+											"name": "Role3"
 										},
 										{
 											"_type": "UMLAttribute",
@@ -58220,9 +58307,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -58236,7 +58323,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -58748,9 +58835,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 149,
-																	"width": 201.6142578125,
+																	"width": 185.19287109375,
 																	"height": 13,
 																	"text": "Escenario Alt 1: Partida no iniciada"
 																},
@@ -58764,7 +58851,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 149,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -58798,7 +58885,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 182,
-																					"width": 86.35986328125,
+																					"width": 81.67529296875,
 																					"height": 13,
 																					"text": "[iniciada=false]"
 																				}
@@ -58833,7 +58920,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 225,
-																					"width": 81.30078125,
+																					"width": 77.34619140625,
 																					"height": 13,
 																					"text": "[iniciada=true]"
 																				}
@@ -58891,9 +58978,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 325,
-																	"width": 321.56591796875,
+																	"width": 292.0048828125,
 																	"height": 13,
 																	"text": "Escenario Alt 2: Error el generar el archivo de guardado"
 																},
@@ -58907,7 +58994,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 325,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -58941,7 +59028,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 358,
-																					"width": 157.5107421875,
+																					"width": 145.79931640625,
 																					"height": 13,
 																					"text": "[Error al generar el archivo]"
 																				}
@@ -58976,7 +59063,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 431,
-																					"width": 190.05517578125,
+																					"width": 173.98291015625,
 																					"height": 13,
 																					"text": "[Archivo generado exitosamente]"
 																				}
@@ -60496,10 +60583,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGdh34a2sycR8k="
 											},
-											"name": "Role3",
-											"type": {
-												"$ref": "AAAAAAGdcYykPJeV4wQ="
-											}
+											"name": "Role3"
 										},
 										{
 											"_type": "UMLAttribute",
@@ -60567,9 +60651,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -60583,7 +60667,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -64511,9 +64595,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 253,
-																	"width": 132.96435546875,
+																	"width": 128.5400390625,
 																	"height": 13,
 																	"text": "Alt 1: Edificio no propio"
 																},
@@ -64527,7 +64611,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 253,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -64561,7 +64645,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 286,
-																					"width": 106.95166015625,
+																					"width": 103.974609375,
 																					"height": 13,
 																					"text": "[Edificio no propio]"
 																				}
@@ -64596,7 +64680,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 351,
-																					"width": 88.8798828125,
+																					"width": 87.724609375,
 																					"height": 13,
 																					"text": "[Edificio propio]"
 																				}
@@ -64654,9 +64738,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 397,
-																	"width": 177.05517578125,
+																	"width": 158.8310546875,
 																	"height": 13,
 																	"text": "Alt 2: Poder generar personaje"
 																},
@@ -64670,7 +64754,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 397,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -64704,7 +64788,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 430,
-																					"width": 112.0234375,
+																					"width": 101.0546875,
 																					"height": 13,
 																					"text": "[No puede generar]"
 																				}
@@ -64739,7 +64823,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 473,
-																					"width": 93.234375,
+																					"width": 82.646484375,
 																					"height": 13,
 																					"text": "[Puede generar]"
 																				}
@@ -64797,9 +64881,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 581,
-																	"width": 185.7197265625,
+																	"width": 167.1337890625,
 																	"height": 13,
 																	"text": "Alt 3: No hay celdas adyacentes"
 																},
@@ -64813,7 +64897,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 581,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -64847,7 +64931,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 614,
-																					"width": 146.70703125,
+																					"width": 132.4501953125,
 																					"height": 13,
 																					"text": "[No hay celda adyacente]"
 																				}
@@ -64882,7 +64966,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 657,
-																					"width": 128.63525390625,
+																					"width": 116.2001953125,
 																					"height": 13,
 																					"text": "[Hay celda adyacente]"
 																				}
@@ -65658,9 +65742,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 30.55908203125,
 																	"top": 13,
-																	"width": 67.9326171875,
+																	"width": 62.8037109375,
 																	"height": 13,
 																	"text": "Interaction1"
 																},
@@ -65674,7 +65758,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 13,
-																	"width": 13.72998046875,
+																	"width": 11.55908203125,
 																	"height": 13,
 																	"text": "sd"
 																}
@@ -66189,9 +66273,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 229,
-																	"width": 205.232421875,
+																	"width": 188.08740234375,
 																	"height": 13,
 																	"text": "Método Aleatorio o Predeterminado"
 																},
@@ -66205,7 +66289,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 229,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -66239,7 +66323,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 262,
-																					"width": 209.57421875,
+																					"width": 192.3974609375,
 																					"height": 13,
 																					"text": "[Metodo aleatorio o predeterminado]"
 																				}
@@ -66274,7 +66358,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 359,
-																					"width": 196.56787109375,
+																					"width": 177.7216796875,
 																					"height": 13,
 																					"text": "[Modo de carga desde un archivo]"
 																				}
@@ -66688,9 +66772,9 @@
 																	},
 																	"font": "Arial;13;0",
 																	"parentStyle": true,
-																	"left": 32.72998046875,
+																	"left": 31.99365234375,
 																	"top": 405,
-																	"width": 142.3271484375,
+																	"width": 130.40625,
 																	"height": 13,
 																	"text": "Error al cargar el archivo"
 																},
@@ -66704,7 +66788,7 @@
 																	"parentStyle": true,
 																	"left": 13,
 																	"top": 405,
-																	"width": 13.72998046875,
+																	"width": 12.99365234375,
 																	"height": 13,
 																	"text": "alt"
 																},
@@ -66738,7 +66822,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 438,
-																					"width": 149.55078125,
+																					"width": 139.064453125,
 																					"height": 13,
 																					"text": "[Error al cargar el archivo]"
 																				}
@@ -66773,7 +66857,7 @@
 																					"parentStyle": true,
 																					"left": 28,
 																					"top": 527,
-																					"width": 156.80615234375,
+																					"width": 146.67529296875,
 																					"height": 13,
 																					"text": "[Archivo cargado con éxito]"
 																				}
