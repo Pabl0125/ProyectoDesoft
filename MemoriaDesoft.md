@@ -36,7 +36,10 @@ En primera instancia, el modelo de casos de uso permite especificar los requisit
 
 A continuación se incluyen los diagramas generales y las descripciones completas de todos los casos de uso identificados:
 
-*(Insertar aquí las capturas de los diagramas de casos de uso del Administrador y del Jugador)*
+![Diagrama primera iteracion](./DiagramaCasos_Admin.png)
+![Diagrama primera iteracion](./DiagramaCasos_Jugador.png)
+
+
 
 #### CASOS DE USO DE PRIORIDAD ALTA
 
@@ -386,7 +389,8 @@ Para llevar a cabo el diseño de esta iteración, el equipo adoptó una metodolo
 
 Cada uno de los cuatro participantes del equipo asumió la responsabilidad de diseñar **dos diagramas de secuencia** correspondientes a los casos de uso de prioridad alta. Esto nos permitió cubrir todo el espectro de funcionalidades básicas de forma eficiente y colaborativa, ilustrando el tiempo de ejecución de las interacciones principales.
 
-*(Insertar aquí el diagrama de clases de la Iteración 1 y una cuidada selección de los diagramas de secuencia elaborados, evitando incluir la colección completa para favorecer la legibilidad)*
+![Diagrama primera iteracion](./DiagramadeClases_Iter1.png)
+
 
 ## 3.3 Iteración 2
 
@@ -394,6 +398,7 @@ En la segunda iteración, el objetivo evolucionó hacia la extensión del rango 
 
 **Estructura y Comportamiento**
 El desarrollo de esta iteración supuso un reto de refactorización importante. Por un lado, **fue necesario actualizar los diagramas de secuencia elaborados en la Iteración 1**, ya que la inclusión de patrones de diseño alteró el flujo de mensajes y la delegación de responsabilidades entre los objetos. Por otro lado, manteniendo la dinámica de trabajo equitativo, el equipo se repartió el diseño de los nuevos casos de uso de prioridad media, elaborando cada integrante **dos nuevos diagramas de secuencia**.
+
 
 *(Insertar aquí el diagrama de clases de la Iteración 2 exportado desde StarUML y los diagramas de secuencia representativos de los ataques o la reparación)*
 
