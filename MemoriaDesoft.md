@@ -4,6 +4,8 @@ author: [Joel Amorím Rodríguez, Odei Alcalde Rodríguez, Pablo Araújo Rodríg
 date: "17 de mayo de 2026"
 ---
 
+\newpage
+
 # **Memoria del Proyecto: Diseño de Software**
 
 **Equipo de Desarrollo (GR1_J2):**
@@ -42,8 +44,7 @@ En primera instancia, el modelo de casos de uso permite especificar los requisit
 
 A continuación se incluyen los diagramas generales y las descripciones completas de todos los casos de uso identificados (Azul: Prioridad Alta, Amarillo: Prioridad Media, Gris: Prioridad Baja):
 
-![Diagrama Casos de uso Administrador](./DiagramaCasos_Admin.png)
-![Diagrama Casos de uso Jugador](./DiagramaCasos_Jugador.png)
+![Diagrama Casos de uso](./imgs/DiagramaCasosdeUso.jpg)
 
 
 ### CASOS DE USO DE PRIORIDAD ALTA
@@ -245,7 +246,7 @@ A continuación se incluyen los diagramas generales y las descripciones completa
 * **Inclusiones:** Incluye al caso de uso: "Refrescar mapa".
 * **Prioridad:** Alta
 
----
+
 
 ### CASOS DE USO DE PRIORIDAD MEDIA
 
@@ -291,17 +292,22 @@ A continuación se incluyen los diagramas generales y las descripciones completa
 * **Inclusiones:** Incluye al caso de uso: "Refrescar mapa".
 * **Prioridad:** Media
 
-#### **CASO DE USO: CU13 - Eliminar personaje**
-* **Actores:** Administrador
-* **Resumen:** Proceso automático que se encarga de retirar a un personaje o grupo del juego cuando sus puntos de salud se han visto reducidos a cero.
-* **Precondiciones:** Un personaje o grupo ha recibido daño producto de un ataque y su nivel de salud ha descendido hasta cero (o menos).
-* **Postcondiciones:** El personaje es borrado del registro de unidades de su civilización y desaparece permanentemente del tablero. La celda que ocupaba pasa a estar libre de nuevo.
+Aquí tienes el caso de uso formateado exactamente con el mismo estilo Markdown que utilizaste en tu informe (`MemoriaDesoft.md`):
+
+#### **CASO DE USO: CU13 - Atacar**
+* **Actores:** Jugador
+* **Resumen:** Permite a un personaje, grupo de personajes o edificio ocupado de la civilización activa inflingir daño a un elemento enemigo (personaje, grupo o edificio) dentro de su rango de alcance. Toda acción de ataque ofensivo conlleva siempre un contraataque automático por parte del defensor.
+* **Precondiciones:** La partida está iniciada y es el turno del jugador activo. El elemento atacante posee capacidad ofensiva y el objetivo es un elemento de una civilización rival visible en su mapa. El objetivo se encuentra en una celda adyacente al atacante (o a una distancia máxima de dos celdas si el atacante es un arquero).
+* **Postcondiciones:** La salud del elemento enemigo atacado se reduce según el cálculo de daño (calculado en función del ataque del agresor y la defensa del objetivo). El atacante sufre una reducción de salud debido al contraataque automático del defensor. Si acaso la salud de cualquier entidad se reduce a 0, esta es eliminada del juego o, si es un edificio, pasa a estar destruido.
 * **Escenario Principal:**
-    * a. Tras un ataque, el sistema verifica el estado de salud del personaje o grupo afectado.
-    * b. El sistema identifica que los puntos de vida son iguales o inferiores a cero.
-    * c. El sistema procede a eliminar la instancia del personaje o grupo de la partida.
-    * d. El personaje o grupo desaparece de la celda que estaba ocupada.
-* **Extensiones:** Extiende al caso de uso: "Atacar".
+    * a. El jugador selecciona un personaje, grupo o edificio (ocupado) propio.
+    * b. El jugador indica como objetivo a un elemento enemigo (personaje, grupo o edificio) dentro del rango de ataque permitido.
+    * c. El sistema verifica que el ataque es válido según las reglas de alcance (adyacencia en celdas o distancia de dos celdas para arqueros).
+    * d. El sistema calcula el daño a infligir basándose en el nivel de ataque del ofensor y el nivel de defensa del enemigo y lo aplica.
+    * e. El sistema aplica el daño de contraataque al atacante de forma automática.
+    * f. El sistema verifica los puntos de salud restantes en ambas partes y elimina a aquellas entidades que hayan llegado a 0.
+* **Escenario Alternativo 1:** Objetivo fuera de alcance. Si el elemento a atacar no se encuentra en una celda adyacente o en el rango de visión/disparo de la unidad, el sistema cancela la orden e informa del error.
+* **Extensiones:** -
 * **Inclusiones:** Incluye al caso de uso: "Refrescar mapa".
 * **Prioridad:** Media
 
@@ -348,7 +354,6 @@ A continuación se incluyen los diagramas generales y las descripciones completa
 * **Inclusiones:** Incluye al caso de uso: "Refrescar mapa".
 * **Prioridad:** Media
 
----
 
 ### 2.2 Modelo de Vocabulario
 
@@ -356,7 +361,7 @@ El modelo de vocabulario, tiene como objetivo atrapar los conceptos de mayor rel
 
 A continuación se inserta una vista del Modelo de Vocabulario, que plasma la estructura lógica del juego:
 
-![Modelo de vocabulario](./Modelo_Vocabulario.png)
+![Modelo de vocabulario](./imgs/ModeloVocabulario.jpg)
 
 **Observaciones de interés sobre el modelo:**
 
@@ -399,7 +404,7 @@ Para llevar a cabo el diseño de esta iteración, el equipo por un reparto equit
 
 Cada uno de los cuatro participantes del equipo asumió la responsabilidad de diseñar tres diagramas de secuencia correspondientes a los casos de uso de prioridad alta. Esto nos permitió cubrir todo el espectro de funcionalidades básicas de forma eficiente y colaborativa, ilustrando el tiempo de ejecución de las interacciones principales.
 
-![Diagrama primera iteracion](./DiagramadeClases_Iter1.png)
+![Diagrama primera iteracion](./imgs/DiagramadeClases_Iter1.jpg)
 
 
 ## 3.3 Iteración 2
@@ -409,7 +414,7 @@ En la segunda iteración, el objetivo fue extender el rango de acciones posibles
 El desarrollo de esta iteración supuso un reto importante. Por un lado, fue necesario actualizar los diagramas de secuencia elaborados en la Iteración 1, ya que la inclusión de patrones de diseño alteró el flujo de mensajes y la delegación de responsabilidades entre los objetos. Por otro lado, manteniendo la dinámica de trabajo equitativo, el equipo se repartió el diseño de los nuevos casos de uso de prioridad media, elaborando cada integrante dos nuevos diagramas de secuencia.
 
 
-![Diagrama segunda iteracion](./DiagramaClases_Iter2.png)
+![Diagrama segunda iteracion](./imgs/DiagramaClases_Iter2.jpg)
 
 
 Con la entrega final a la vuelta de la esquina, el trabajo técnico se centró principalmente en la aplicación de patrones de diseño para resolver problemáticas específicas y mejorar el diseño del sistema mediante la inclusión de patrones de diseño concretos como los siguientes:
@@ -425,9 +430,258 @@ Con la entrega final a la vuelta de la esquina, el trabajo técnico se centró p
 5. **Patrón Strategy (Estrategia):**
    * *Objetivo:* Desacoplar el algoritmo responsable de "Cargar tablero". Utilizando la interfaz `ICargadorMapa`, la Partida delega la generación del terreno a estrategias concretas (`Predeterminado`, `Aleatorio`, `Precreado`), facilitando el intercambio de la lógica de creación en tiempo de ejecución.
 
+## 3.4. Propósito de las clases
+
+Como paso previo a la definición detallada de las Tarjetas CRC, a continuación se enuncia brevemente el propósito  o "razón de ser" de cada una de las clases e interfaces que estructuran nuestra arquitectura:
+
+| **Clase / Interfaz** | **Razón de ser (Propósito principal)** |
+| --- | --- |
+| **`Partida`** | Controlador principal que funciona a modo de fachada y orquesta el flujo del juego, los turnos y el estado general de la partida. |
+| **`Civilizacion`** | Representa a una facción, centralizando sus recursos, poblacion, edificios ... |
+| **`Mapa`** | Estructura que gestiona las dimensiones del tablero, la visibilidad y las adyacencias entre casillas. |
+| **`Celda`** | Componente mínima del terreno que define una posición concreta, su transitabilidad y alberga una o varias entidades. |
+| **`ContenedorRecursos`** | Fuente de materias primas (madera, piedra o alimento) susceptible de ser explotada en el tablero. |
+| **`Personaje`** | Abstracción base para todas las entidades móviles, encapsulando sus atributos vitales y logísticos. |
+| **`Paisano`** | Unidad civil encargada de las tareas de recolección, construcción y reparación de infraestructuras. |
+| **`SoldadoAbstracto`** | Estructura base para las unidades militares que permite la inyección dinámica de equipamiento. |
+| **`Soldado`** | Unidad militar con capacidad ofensiva para atacar tanto personajes como edificios. |
+| **`Grupo`** | Agrupación de entidades que permite juntar a múltiples personajes como una sola unidad. |
+| **`Decorator`** | Clase base de tipo decoradordiseñada para envolver a las tropas y extender su funcionalidad. |
+| **`DecoradorEscudo / Caballo / Arco`** | Modificadores que alteran las estadísticas base del soldado en tiempo de ejecución y que heredan a su vez del Decorador base. |
+| **`Edificio`** | Abstracción base para las infraestructuras de la partida, que gestiona el aforo y delega su comportamiento a su estado. |
+| **`Casa`** | Estructura civil diseñada para alojar toda clase de personajes. |
+| **`Cuartel`** | Estructura militar destinada a instanciar y generar nuevas unidades de combate. |
+| **`Ciudadela`** | Edificio central que genera paisanos y actúa como punto de entrega para el almacenamiento de recursos. |
+| **`Estado`** | Interfaz que define el comportamiento de un edificio en función de su salud. |
+| **`Saludable / Dañado / Destruido`** | Estados concretos que dictan si un edificio opera con normalidad, si permite reparaciones o se encuentra en ruinas. |
+| **`Observable`** | Dota a las celdas de un sistema de aviso y notificación de eventos y cambios en el sistema. |
+| **`IObservador`** | Interfaz de escucha que obliga a los elementos defensivos a implementar un método de reacción. |
+| **`Torre`** | Infraestructura defensiva que dispara ataques automáticamente al detectar intrusos en su perímetro. |
+| **`ICargadorMapa`** | Interfaz que desacopla el algoritmo de creación de la cuadrícula del tablero. |
+| **`Predeterminado / Aleatorio / Precreado`** | Estrategias concretas para generar, distribuir o cargar el terreno de juego. |
+| **`DAO`** | Objeto encargado de aislar y gestionar la lógica de lectura de los archivos de guardado del juego. |
+
+
+## 3.4 Tarjetas CRC
+
+Como complemento al diagrama de clases y a los diagramas de secuencia presentados en los apartados anteriores, en esta sección se detallan las Tarjetas CRC de las clases e interfaces del sistema. El objetivo principal de estas tarjetas es definir el propósito específico de cada clase o interfaz, así como identificar las dependencias y colaboraciones necesarias para que estas puedan cumplir con su cometido.
+
+A continuación, se presentan las tarjetas de las clases e interfaces que conforman nuestra aplicación.
+
+| **Partida** |  |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Actuar como controlador o fachada recibiendo las peticiones del Administrador y del Jugador | `Civilizacion` |
+| Orquestar la creación y el estado general de la partida | `ICargadorMapa` |
+| Gestionar la política y el orden de los turnos de los jugadores | `Mapa` |
+| Desencadenar procesos automáticos y refrescar la interfaz gráfica ASCII |  |
+
+| **Civilizacion** |  |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Mantener el saldo de la tesorería global de madera, piedra y alimento | `Personaje` |
+| Registrar y gestionar todas las entidades aliadas como personajes y edificios que le pertenecen | `Edificio` |
+| Recibir órdenes de la Partida y delegarlas a sus unidades operativas |  |
+
+| **Mapa** |  |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Mantener las dimensiones de ancho y alto y la matriz o colección de todas las celdas del tablero | `Celda` |
+| Calcular distancias y adyacencias y gestionar la visibilidad de las casillas para cada jugador | `Partida` |
+
+| **Celda** | *(Hereda de Observable)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Conocer su posición en el tablero mediante Coordenadas X e Y y su tipo de terreno | `Edificio` |
+| Gestionar su transitabilidad y albergar personajes, edificios o recursos | `ContenedorRecursos` |
+| Notificar a los observadores como las Torres cuando una entidad altera su estado o entra en ella | `Personaje` |
+
+| **ContenedorRecursos** |  |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Almacenar el tipo de recurso como madera, piedra o alimento y la cantidad disponible | `Celda` |
+| Permitir la extracción de recursos y llevar la cuenta de explotaciones | `Paisano` |
+
+| **Personaje** | *(Abstracta / Componente)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Definir la interfaz común y atributos base como Salud, Energía y Capacidades Ofensiva, Defensiva y Movimiento | `Celda` |
+| Responder a las órdenes de movimiento y solicitar entrada en edificios o celdas |  |
+
+| **Paisano** | *(Hereda de Personaje)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Gestionar recolección almacenando capacidad de recolección y recursos cargados | `ContenedorRecursos` |
+| Ejecutar acciones lógicas de construir edificios y repararlos | `Edificio` |
+
+| **SoldadoAbstracto** | *(Hereda de Personaje)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Servir como base estructural para las unidades militares y los decoradores de equipamiento | Ninguno |
+
+| **DecoratorSoldado** | *(Hereda de SoldadoAbstracto)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Mantener el atributo concreto de Alcance de Ataque | Ninguno |
+| Actuar como el objeto base que será envuelto por los decoradores |  |
+
+| **Grupo** | *(Hereda de Personaje / Compuesto)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Actuar lógicamente como una sola unidad sumando las estadísticas de sus integrantes | `Personaje` |
+| Propagar las órdenes recibidas de moverse, atacar o recolectar a todos sus miembros iterando sobre ellos |  |
+
+| **Decorator** | *(Abstracta)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Envolver a un SoldadoAbstracto como componente para alterar dinámicamente sus atributos en tiempo de ejecución | `SoldadoAbstracto` |
+
+| **DecoradorEscudo / DecoradorCaballo / DecoradorArco** | *(Heredan de Decorator)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Sobrescribir los métodos de capacidad defensiva, movimiento o ataque respectivamente para añadir bonificadores a las tropas | `Decorator` |
+
+| **Edificio** | *(Abstracta / Contexto)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Mantener atributos base como Salud, Capacidad Defensiva y Ofensiva, Aforo y Costes de reparación | `Estado` |
+| Alojar personajes actuando de guarnición y delegar su comportamiento al Patrón State | `Celda` |
+
+| **Casa / Cuartel / Ciudadela** | *(Heredan de Edificio)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Casa amplía el límite de población o alojamiento | `Edificio` |
+| Cuartel fabrica y retorna instancias de unidades militares de tipo Soldado | `Paisano` |
+| Ciudadela fabrica Paisanos y sirve como punto de almacenamiento para la recolección | `Soldado` |
+
+| **Estado** | *(Abstracta / Interfaz)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Definir el comportamiento que debe tener un edificio dependiendo de su situación actual | `Edificio` |
+
+| **Saludable / Dañado / Destruido** | *(Estados Concretos)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Saludable representa el funcionamiento óptimo del edificio | `Edificio` |
+| Dañado permite la invocación del método repararEdificio para recuperar puntos de salud |  |
+| Destruido ejecuta la lógica para expulsar a los ocupantes y despejar la celda del tablero |  |
+
+| **Observable** | *(Patrón Observer)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Mantener una lista de objetos suscritos que implementan IObservador | `IObservador` |
+| Proveer métodos para añadir, eliminar y notificar a los observadores cuando ocurra un evento relevante |  |
+
+| **IObservador** | *(Interfaz)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Exigir la implementación del método actualizar para reaccionar a las notificaciones | `Observable` |
+
+| **Torre** | *(Hereda de Edificio e IObservador)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Suscribirse a las celdas circundantes | `Celda` |
+| Implementar actualizar obteniendo la entidad enemiga detectada y ejecutando un ataque automático calculando el daño base | `Personaje` |
+
+| **ICargadorMapa** | *(Estrategia)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Definir la firma común cargarTablero que la Partida invocará independientemente de cómo se construya el terreno | `Partida` |
+
+| **Predeterminado / Aleatorio / Precreado** | *(Estrategias Concretas)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Predeterminado configura el mapa base por defecto | `Partida` |
+| Aleatorio ejecuta un algoritmo procedural para crear una cuadrícula e inyectar recursos al azar | `DAO` |
+| Precreado delega la recuperación de la información guardada al DAO para reconstruir un mapa exacto |  |
+
+| **DAO** | *(Data Access Object)* |
+| --- | --- |
+| **Responsabilidades** | **Colaboradores** |
+| Encapsular y abstraer la lógica de lectura y escritura en el sistema de archivos físicos mediante leerArchivo | `Precreado` |
+| Devolver las cadenas de datos en un formato parseable para que el motor del juego las reconstruya | `Partida` |\
+
+## 3.5 Diagramas de secuencia
+
+A lo largo de la Fase de Construcción, y especialmente durante la segunda iteración, la incorporación de los distintos patrones de diseño modificó notablemente la interacción entre clases. Al delegar responsabilidades, el flujo de mensajes tuvo cambios notables en un nuevo esquema de responsabilidades descentralizadas.
+
+Para ilustrar esta interacción entre clases y entidades a continuación se presentan los modelos de comportamiento de tres de los casos de uso más representativos del proyecto. Cada uno de estos diagramas de secuencia expone cómo la clase `Partida` ejerce su labor de controlador y cómo los objetos colaboran entre sí haciendo un uso intensivo de los patrones estructurales y de comportamiento previamente justificados.
+
+### CASO DE USO: CU15 - Ser Atacado por Torre
+
+Este diagrama de secuencia muestra la acción que se desencadena automáticamente en el sistema como reacción a la actividad enemiga en el rango de visión de las defensas. El flujo comienza cuando una Celda hace una llamada interna a su método notificar(). Esto inicia un lazo iterativo (loop) sobre todos los observadores que están registrados vigilando dicha celda. En cada iteración, la Celda llama al método actualizar() de la Torre. Para evaluar la situación, la Torre solicita primero a la Celda la instancia del ocupante mediante getPersonaje(), recibiendo en este escenario concreto a un Paisano (objetivo). A continuación, la Torre consulta la afiliación de dicho personaje llamando a getCivilizacion(). En este punto se evalúa un fragmento condicional (alt): si la civilización del objetivo coincide con la de la torre ([civObjetivo == civTorre]), el ataque se aborta inmediatamente devolviendo un mensaje de ERROR para evitar el fuego amigo.
+
+Es en esta interacción donde se fundamenta el uso del patrón de diseño Observer. Al aplicar este patrón, la Celda asume el rol de sujeto observable y se desentiende por completo de las mecánicas de lucha o de saber qué estructuras concretas la están vigilando. Su única responsabilidad es avisar de que ha habido una alteración en su estado (como la llegada de un personaje) a través del método notificar(). Las torres, que actúan como observadores suscritos a las celdas de su entorno, reciben esta alerta pasiva a través de su método actualizar() y ejecutan su propia lógica para decidir si deben atacar o no. Esta arquitectura mantiene el código altamente desacoplado, permitiendo que la mecánica de ataque automático descrita en las reglas del juego funcione por pura reacción, sin que la partida o las celdas necesiten gestionar activamente los chequeos de proximidad.
+
+Si la comprobación de afiliación confirma que el personaje es efectivamente un enemigo, el flujo avanza y la Torre materializa el ataque llamando al método serAtacadoPorTorre(capacidadOfensiva) directamente sobre el Paisano (capacidadOfensiva es un atributo de la Torre, la estadística de daño total que inflige en un elemento enemigo si lo ataca). El personaje procesa el impacto invocando su propio método interno reducirSalud(dañoEfectuado). Tras aplicar el daño, el diagrama muestra otro fragmento condicional final para verificar la salud resultante del objetivo tras el ataque. Si la salud del personaje desciende a cero o menos ([salud <= 0]), el sistema interrumpe el flujo normal e introduce una referencia (ref) delegando el resto del proceso al caso de uso encargado de "desaparecer" a una entidad (Eliminar Personaje). Si, por el contrario, el personaje logra sobrevivir al impacto ([salud > 0]), el proceso de ataque concluye correctamente y se devuelve una confirmación (OK), cerrando el ciclo de la notificación.
+
+![Diagrama de secuencia 2](./imgs/DiagramaSecuencia_SerAtacadoPorTorre.jpg)
+
+
+
+### CASO DE USO: CU14 - Destruir Edificio
+
+
+El diagrama de secuencia ilustra el proceso que se desencadena automáticamente en el sistema cuando la salud de un edificio llega a cero, actuando como una extensión del caso de uso de atacar. El flujo comienza cuando el sistema ejecuta una validación periódica del estado de salud de los edificios, y llama al método evaluarSaludEdificio() sobre la Partida. La Partida consulta primero los puntos de salud del Edificio concreto, y al recibir como respuesta un 0 (o un valor negativo), le ordena directamente que proceda a transicionar su situación mediante el método actualizarEstado().
+
+Es en este punto donde hacemos uso del patrón de diseño State para gestionar el ciclo de vida de un edificio. En lugar de que la clase Edificio modifique sus atributos internos mediante sentencias condicionales, delega esta responsabilidad a su objeto de estado actual. Este estado actual ejecuta su método comprobarEstado() y evaluar(), encargándose él mismo de instanciar (<>) el nuevo objeto correspondiente al estado "Destruido". A continuación, el edificio recibe este nuevo estado a través de setEstado() y la instancia del viejo estado se elimina de la memoria (<>). La aplicación de este patrón permite que el edificio modifique su comportamiento dinámicamente y mantiene la lógica de las transiciones encapsulada en las clases concretas de cada estado.
+
+Durante esta transición, el diagrama contempla dos bloques fundamentales para el correcto funcionamiento del juego. En primer lugar, se observa la limpieza de dependencias ligada al patrón Observer: si el edificio que acaba de ser destruido actuaba como observador del entorno, este se desuscribe de la Celda llamando al método eliminar() para dejar de recibir notificaciones. En segundo lugar, se gestiona a los supervivientes: si el edificio estaba ocupado, la Partida recupera la lista de personajes refugiados en su interior y, mediante un bucle iterativo, procede a ejecutar la lógica para expulsarlos hacia celdas adyacentes. Finalmente, tras vaciar la estructura, la Partida ordena a la celda actualizar su presentación visual, refresca el mapa global en la interfaz y devuelve un mensaje confirmando que la demolición se ha procesado correctamente.
+
+![Diagrama de secuencia 2](./imgs/DiagramadeClases_DestruirEdificio.jpg)
+
+
+### CASO DE USO: CU17 - Almacenar Recursos
+
+
+El diagrama de secuencia comienza cuando el jugador transmite a la partida la orden de almacenar recursos enviando como parametros la unidad (personaje o grupo) y la ciudadela destino. Al recibir la petición, la partida realiza primero una verificación interna de la ciudadela y luego le solicita al mapa que compruebe si existe adyacencia entre la posición de la unidad y la ciudadela. Si el mapa determina que no son adyacentes, el proceso se interrumpe inmediatamente y se le notifica un error al jugador. Si la comprobacion resulta exitosa el flujo avanza y se divide en dos caminos dependiendo de si la unidad seleccionada es un personaje individual o un grupo.
+
+Es en esta distinción de la unidad donde entra en juego el patrón de diseño Composite. Este patrón se consigue haciendo que tanto los personajes individuales como los grupos compartan una misma interfaz o clase base permitiendo al sistema tratar a un solo paisano o a un grupo entero de forma uniforme como si fuesen el mismo tipo de objeto.
+
+Si la unidad resulta ser un personaje individual, la partida le solicita la cantidad de recursos que transporta y procede a intentar guardarlos en la ciudadela llamando al método almacenarRecursos(Recursos). En este punto, la acción puede ser rechazada si la ciudadela se encuentra llena o se llena antes de terminar el proceso de almacenamiento. De ser así se devuelve un error indicando que el paisano debe conservar su carga. Si, por el contrario, hay espacio, la ciudadela acepta los recursos y la partida le ordena al personaje vaciar su inventario.
+
+En caso de la unidad ser un grupo, el sistema se apoya en la estructura jerárquica del patrón Composite para desplegar un bucle que itera sobre todos y cada uno de los personajes que componen dicho grupo. La partida extrae individualmente los recursos de cada integrante y los envía a la ciudadela realizando por cada uno la misma comprobación de capacidad descrita anteriormente y vaciando sus inventarios paso a paso si el almacenamiento es exitoso. Finalmente, se devuelve un mensaje de confirmación final al jugador indicando que todo el proceso ha terminado correctamente.
+
+![Diagrama de secuencia 3](./imgs/DiagramaSecuencia_AlmacenarRecursos.jpg)
+
+### CASO DE USO: C02 - Mover Entidad
+
+
+El flujo del diagrama de secuencia comienza cuando el jugador solicita mover un personaje a una celda de destino a traves de la partida. La partida se encarga de recuperar la instancia de la celda desde el mapa y la instancia del personaje desde la civilización del jugador. Una vez tiene ambos elementos, la partida le pide al mapa que compruebe si la celda de destino es adyacente o esta dentro del rango de movimiento del personaje, teniendo en cuenta que tropas como los caballeros pueden moverse más de una casilla. Si el mapa responde que no es adyacente, el proceso se interrumpe y se le devuelve un error al jugador. Si resulta ser adyacente, el siguiente paso es que la partida le pregunte directamente a la celda si es transitable. En caso de no ser transitable, se devuelve otro error al jugador cancelando la acción. Si la celda efectivamente es transitable, la partida procede a actualizar el estado del juego indicándole a la celda que ahora contiene a ese personaje.
+
+Justo en este momento es donde se implementa el patrón de diseño Observador. Esto se consigue haciendo que la celda actúe como un sujeto observable. Cuando la partida ejecuta la función para situar al personaje en la celda, esta misma celda hace una llamada interna a su método notificar(). Este método se encarga de avisar automáticamente a cualquier elemento externo que esté vigilando esa celda, que en este caso son las torres enemigas que actúan como observadores. Gracias a esta notificación, la torre detecta la intrusión en su área de alcance e inicia de inmediato su proceso de ataque sobre el personaje sin necesidad de que la celda sepa como atacar ni quién la vigila. Tras esto, la partida termina el proceso vinculando la nueva celda al personaje y ejecutando una actualización de la interfaz del mapa y enviando finalmente un mensaje de confirmacion al jugador.
+
+![Diagrama de secuencia 4](./imgs/DiagramaSecuencia_MoverPersonaje.jpg)
+
+### CASO DE USO: CU4 - Generar Personaje
+
+
+El diagrama de secuencia muestra cómo interactúan los objetos en el sistema para la creación de una nueva unidad durante el turno de un jugador. El proceso comienza cuando el actor Jugador ejecuta la acción llamando al método generarPersonaje(idEdificio) sobre el objeto Partida. La Partida recupera primero la instancia del edificio correspondiente a través de la civilización actual (civActual) y verifica si este puede generar unidades. Si el edificio es válido, se comprueba si la civilización dispone de los recursos necesarios para costearlo. De ser así, se busca una casilla adyacente disponible llamando a getCeldaAdyacente() sobre la Celda donde se ubica la estructura. Si todas estas validaciones se superan (es decir, no se entra en los flujos alternativos de error), la Partida delega la instanciación llamando al método generarPersonaje(celdaAdyacente) directamente sobre el objeto edificio (en el caso del diagrama, una Ciudadela). Es la propia Ciudadela la que asume la responsabilidad de crear (<>) el nuevo objeto "nuevoPersonaje" de la clase Paisano (si fuera un cuartel, sería de la clase Soldado), registrarlo mediante añadirPersonaje() y devolver una cadena de confirmaciones (OK) hasta el Jugador, indicando que el despliegue se ha realizado con éxito.
+
+En este caso de uso se aplica el patrón de diseño Factory Method para resolver la creación de los distintos tipos de personajes, de forma que la partida no necesite saber detalles del proceso de creación. Según las reglas del proyecto, dependiendo del edificio seleccionado se generará un tipo de unidad u otro: las ciudadelas crean paisanos y los cuarteles crean soldados. Al aplicar el patrón Factory Method, la superclase abstracta Edificio (el creador base) define el método generarPersonaje(), pero delega en sus subclases la decisión exacta de qué instancia crear. De este modo, la clase Partida no necesita conocer los detalles de instanciación ni utilizar sentencias condicionales para determinar la unidad; simplemente llama al método sobre un Edificio. En tiempo de ejecución, si el edificio es una Ciudadela, este sobreescribirá el método para devolver un nuevo Paisano, mientras que si es un Cuartel, devolverá un Soldado. Esto mantiene la lógica de la Partida limpia y permite que en el futuro se incorporen nuevos edificios y personajes sin tener que alterar el código existente.
+
+![Diagrama de secuencia 5](./imgs/DiagramaSecuencia_GenerarPersonaje.jpg)
+
+### CASO DE USO: CU08 - Cargar Tablero
+
+El diagrama de secuencia muestra cómo interactúan los objetos en el sistema para preparar el mapa antes de iniciar el juego. El proceso comienza cuando el actor Administrador ejecuta la acción llamando al método cargarTablero() sobre el objeto Partida. En lugar de que la clase Partida asuma la lógica de generar el tablero base, delega esta responsabilidad llamando a su vez al método cargarTablero() sobre un objeto llamado "estrategia" (representado en este caso por una instancia de la clase Precreado, la cual implementa la interfaz ICargadorMapa). Como esta estrategia en particular consiste en cargar una configuración previamente almacenada, el objeto Precreado delega la extracción de la información llamando al método leerArchivo() sobre el objeto "dao" de la clase DAO. Es este objeto de acceso a datos el que lee la fuente externa y se encarga de instanciar (<>) el nuevo objeto "tablero" de la clase Mapa. Una vez que el mapa está creado, el DAO devuelve la referencia de este tablero a la estrategia, esta se la traslada a la Partida, y finalmente la Partida envía un mensaje de confirmación (OK) al Administrador, indicando que la configuración espacial se ha cargado con éxito.
+
+En este caso de uso se aplican de forma complementaria los patrones de diseño Strategy y DAO (Data Access Object). Por un lado, se utiliza el patrón Strategy para resolver la variabilidad en la generación del tablero, de modo que la clase Partida (el contexto) no necesita conocer los detalles de implementación; simplemente interactúa con la interfaz ICargadorMapa. En este escenario concreto, se ejecuta la estrategia Precreado. Por otro lado, para evitar que esta estrategia acople la lógica del juego con la lógica de persistencia, se introduce el patrón DAO. La clase Precreado utiliza el objeto DAO para aislar y centralizar la responsabilidad de acceder al sistema de archivos (o base de datos). Esto permite que el acceso a la información almacenada esté totalmente desacoplado, asegurando que si en el futuro se cambia el formato de guardado de los mapas o se añade una nueva forma de generarlos, la clase Partida no tendrá que ser modificada en absoluto.
+
+![Diagrama de secuencia 6](./imgs/DiagramaSecuencia_CargarTablero.jpg)
+
+### CASO DE USO: CU16 - Reparar edificio
+
+El siguiente diagrama de secuencia detalla el proceso que se inicia cuando un Jugador (actor) transmite a la Partida la orden de reparar un edificio, enviando como parámetros la unidad constructora (paisano) y el edificio objetivo (en este ejemplo, una ciudadela). Al recibir la petición, la Partida despliega una serie de fragmentos condicionales (alt) para validar la viabilidad de la acción antes de ejecutarla. En primer lugar, se evalúa la "Comprobación de recursos" consultando a la civilización actual (civActual) mediante el método comprobarRecursos() si acaso se disponen de los recursos necesarios (madera, piedra...) para construir. Si la respuesta es negativa (false), el flujo se interrumpe y se notifica un ERROR al jugador indicando que los recursos son insuficientes. Si hay recursos suficientes (true), el flujo avanza hacia la "Comprobación de adyacencia", invocando comprobarAdyacencia(paisano, ciudadela) para verificar que ambos elementos se encuentran en celdas adyacentes. De nuevo, si dicha adyacencia no existe entre las entidades, se deniega la acción con un ERROR.
+
+Superados estos requisitos para ejecutar la acción, se realiza una última verificación de viabilidad estructural, "Comprobación de vida", llamando al método comprobarReparable() directamente sobre la ciudadela. Si el edificio se encuentra en un estado que no admite curación (por ejemplo, ya está con la salud al máximo, estado saludable, o ha sido completamente destruido, estado destruido), se devuelve un ERROR. Si todas las validaciones resultan exitosas (el edificio es reparable, es decir, se encuentra en estado dañado), el sistema procede a materializar la acción. La Civilización actual consume los materiales necesarios haciendo una llamada interna a su método restarRecursos(), y tras recibir confirmación de este cobro, le ordena al paisano que inicie la obra invocando a repararEdificio(ciudadela) sobre este.
+
+Es en la ejecución de la reparación donde entra en juego nuevamente el patrón de diseño State. Para realizar su tarea, el paisano solicita primero la situación actual del edificio mediante getEstado(), recibiendo como respuesta la instancia concreta del estado en el que se encuentra (representada en el diagrama como estado: Dañado). En lugar de que el paisano manipule directamente los puntos de salud de la ciudadela, delega la acción llamando al método repararEdificio(ciudadela) sobre el propio objeto de estado. La aplicación de este patrón permite que sea el propio estado "Dañado" quien encapsule la lógica para incrementar los puntos de salud, así como la responsabilidad de transicionar automáticamente a un estado "Saludable" si la estructura recupera por completo su integridad.
+
+Tras procesar la reparación, el objeto de estado devuelve una confirmación de éxito (OK) al paisano. Este, a su vez, traslada la confirmación a la Civilizacion, y esta a la Partida, cerrando finalmente la secuencia con un último mensaje (OK) devuelto al Jugador, indicando que todo el proceso de reparación se ha completado satisfactoriamente.
+
+![Diagrama de secuencia 7](./imgs/DiagramaSecuencia_RepararEdificio.jpg)
 
 ## 4. Fase de Transición
 
-En consecuencia, se hace constar que con fecha de 17 de mayo de 2026 se procede a la entrega de la documentación y los archivos del proyecto para que sean sometidos a valoración por parte del profesor. No obstante, el equipo es consciente de que, en un entorno profesional real, esta fase requeriría un tiempo considerable para asegurar la correcta puesta del producto en manos del cliente y garantizar su correcto despliegue.
-
-
+En consecuencia, se hace constar que con fecha de 17 de mayo de 2026 se procede a la entrega de la documentación y los archivos del proyecto para que sean sometidos a valoración por parte del profesor. No obstante, el equipo es consciente de que, en un entorno profesional real, esta fase requeriría un tiempo considerable para asegurar la correcta puesta del producto en manos del cliente y garantizar su correcto despliegue.  
