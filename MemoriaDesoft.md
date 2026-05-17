@@ -1,6 +1,6 @@
 ---
 title: "Memoria del Proyecto Desoft"
-author: [Joel Amorím Rodríguez, Odei Alcalde Rodríguez, Pablo Araújo Rodríguez, Lucas Arestiño Lorenzo]
+author: [Joel Amorín Rodríguez, Odei Alcalde Rodríguez, Pablo Araújo Rodríguez, Lucas Arestiño Lorenzo]
 date: "17 de mayo de 2026"
 ---
 
@@ -18,7 +18,7 @@ date: "17 de mayo de 2026"
 
 ## Introducción
 
-Este documento constituye la memoria del Proyecto de Diseño correspondiente a la asignatura de Diseño de Software (GrEl) del curso 2025/2026. En las siguientes páginas se relata la toma de decisiones y la evolución de la arquitectura del proyecto a lo largo de todo el cuatrimestre. Para ello, la documentación se ha estructurado siguiendo lo mejor posible las directrices y lecciones dadas a lo largo del curso. A su vezs, hemos dividido nuestra experiencia en cuatro etapas fundamentales: Fase de Inicio, Fase de Elaboración, Fase de Construcción y Fase de Transición.
+Este documento constituye la memoria del Proyecto de Diseño correspondiente a la asignatura de Diseño de Software (GrEl) del curso 2025/2026. En las siguientes páginas se relata la toma de decisiones y la evolución de la arquitectura del proyecto a lo largo de todo el cuatrimestre. Para ello, la documentación se ha estructurado siguiendo lo mejor posible las lecciones dadas a lo largo del curso. A su vez, hemos dividido nuestra experiencia en las siguientes etapas para una mejor comprensión del proceso seguido: Fase de Inicio, Fase de Elaboración, Fase de Construcción y Fase de Transición.
 
 
 
@@ -30,7 +30,7 @@ Para acotar adecuadamente el marco de trabajo, a continuación se detalla la jus
 
 El propósito fundamental de este proyecto es poner en práctica y consolidar los conocimientos adquiridos en la asignatura mediante el diseño y desarrollo completo de un juego de estrategia por turnos de estilo Age of Empires. El sistema sirve como vehículo para aplicar los principios del diseño dados en clase de teoría, elaborando en la medida de lo posible un trabajo escalable y basado en el uso de patrones de diseño.
 
-El alcance del software desarrollado comprende la simulación completa de un entorno de juego capaz de soportar hasta 4 participantes o civilizaciones. El sistema se encarga de la generación, visualización y actualización de un mapa interactivo representado mediante una interfaz gráfica ASCII, la cual simula niebla de guerra mostrando únicamente la porción de terreno .
+El alcance del software desarrollado comprende la simulación completa de un entorno de juego capaz de soportar hasta 4 participantes o civilizaciones. El sistema se encarga de la generación, visualización y actualización de un mapa interactivo representado mediante una interfaz gráfica ASCII.
 
 A nivel mecánico, el alcance abarca la recolección y gestión de recursos (madera, piedra y comida), la construcción de infraestructuras (ciudadelas, cuarteles, casas y torres), la generación, movimiento y agrupación de personajes (tanto paisanos como soldados). Asimismo, el sistema incluye la gestión de combates entre facciones rivales, la automatización de defensas (ataques de torres) y la persistencia de datos, permitiendo al administrador guardar y cargar el estado íntegro de la partida en cualquier momento.
 
@@ -40,11 +40,9 @@ La Fase de Elaboración tuvo lugar durante cuatro semanas que incluyeron tres se
 
 ### 2.1 Modelo de Casos de Uso
 
-En primera instancia, el modelo de casos de uso permite especificar los requisitos funcionales del sistema y establecer la frontera entre dicho sistema y su entorno, motivo por el que resulta de gran utilidad como contrato entre el cliente y el equipo de desarrollo. 
+En primera instancia, el modelo de casos de uso permite especificar los requisitos funcionales del sistema y establecer la frontera entre dicho sistema y su entorno. A continuación se incluyen los diagramas generales y las descripciones completas de todos los casos de uso identificados (Azul: Prioridad Alta, Amarillo: Prioridad Media, Gris: Prioridad Baja):
 
-A continuación se incluyen los diagramas generales y las descripciones completas de todos los casos de uso identificados (Azul: Prioridad Alta, Amarillo: Prioridad Media, Gris: Prioridad Baja):
-
-![Diagrama Casos de uso](./imgs/DiagramaCasosdeUso.jpg)
+\ ![Diagrama Casos de uso](./imgs/DiagramaCasosdeUso.jpg)
 
 
 ### CASOS DE USO DE PRIORIDAD ALTA
@@ -361,14 +359,14 @@ El modelo de vocabulario, tiene como objetivo atrapar los conceptos de mayor rel
 
 A continuación se inserta una vista del Modelo de Vocabulario, que plasma la estructura lógica del juego:
 
-![Modelo de vocabulario](./imgs/ModeloVocabulario.jpg)
+\ ![Modelo de vocabulario](./imgs/ModeloVocabulario.jpg)
 
 **Observaciones de interés sobre el modelo:**
 
 A partir de la estructura representada en el modelo, destacan las siguientes características del juego:
 
 * **Composición de la Partida:** El concepto central es la `Partida`, la cual se encarga de organizar el entorno. Una partida está conformada por un número de entre uno y cuatro jugadores o facciones (`Civilizacion`) y visualiza exactamente un único terreno de juego (`Mapa`).
-* **Estructura del Entorno:** El `Mapa` se compone a su vez de múltiples unidades geográficas discretas denominadas `Celdas`. Cada celda determina la posición de los elementos y puede llegar a poseer un `ContenedorRecursos` (como bosques, canteras o arbustos).
+* **Estructura del Entorno:** El `Mapa` se compone a su vez de múltiples unidades geográficas, denominadas `Celdas`. Cada celda determina la posición de los elementos y puede llegar a poseer un `ContenedorRecursos` (como bosques, canteras o arbustos).
 * **Gestión de Facciones:** Cada `Civilizacion` gestiona dos grandes tipos de recursos activos en el mapa: `Edificio`s y `Personajes`. 
 * **Entidades e Interacción:** Se establece una fuerte relación mediante la cual un `Edificio` ocupa directamente una `Celda`. Existen múltiples variaciones de estructuras que una facción puede poseer, modeladas como especializaciones lógicas: `Casa`, `Torre`, `Cuartel` y `Ciudadela`.
 * **Los Personajes:** Las entidades móviles del juego, englobados bajo el concepto genérico de `Personaje`, se dividen según su especialidad. Por un lado, el `Paisano`, dedicado a tareas logísticas, y por otro, el `Soldado`, que a su vez se divide en perfiles de combate específicos (`Legionario`, `Caballero` o `Arquero`).
@@ -404,7 +402,7 @@ Para llevar a cabo el diseño de esta iteración, el equipo por un reparto equit
 
 Cada uno de los cuatro participantes del equipo asumió la responsabilidad de diseñar tres diagramas de secuencia correspondientes a los casos de uso de prioridad alta. Esto nos permitió cubrir todo el espectro de funcionalidades básicas de forma eficiente y colaborativa, ilustrando el tiempo de ejecución de las interacciones principales.
 
-![Diagrama primera iteracion](./imgs/DiagramadeClases_Iter1.jpg)
+\ ![Diagrama primera iteracion](./imgs/DiagramadeClases_Iter1.jpg)
 
 
 ## 3.3 Iteración 2
@@ -414,7 +412,7 @@ En la segunda iteración, el objetivo fue extender el rango de acciones posibles
 El desarrollo de esta iteración supuso un reto importante. Por un lado, fue necesario actualizar los diagramas de secuencia elaborados en la Iteración 1, ya que la inclusión de patrones de diseño alteró el flujo de mensajes y la delegación de responsabilidades entre los objetos. Por otro lado, manteniendo la dinámica de trabajo equitativo, el equipo se repartió el diseño de los nuevos casos de uso de prioridad media, elaborando cada integrante dos nuevos diagramas de secuencia.
 
 
-![Diagrama segunda iteracion](./imgs/DiagramaClases_Iter2.jpg)
+\ ![Diagrama segunda iteracion](./imgs/DiagramaClases_Iter2.jpg)
 
 
 Con la entrega final a la vuelta de la esquina, el trabajo técnico se centró principalmente en la aplicación de patrones de diseño para resolver problemáticas específicas y mejorar el diseño del sistema mediante la inclusión de patrones de diseño concretos como los siguientes:
@@ -430,6 +428,8 @@ Con la entrega final a la vuelta de la esquina, el trabajo técnico se centró p
 5. **Patrón Strategy (Estrategia):**
    * *Objetivo:* Desacoplar el algoritmo responsable de "Cargar tablero". Utilizando la interfaz `ICargadorMapa`, la Partida delega la generación del terreno a estrategias concretas (`Predeterminado`, `Aleatorio`, `Precreado`), facilitando el intercambio de la lógica de creación en tiempo de ejecución.
 
+Estos y otros patrones de diseño fueron aplicados de forma más o menos exhaustiva en el proyecto. La resolución de los casos de uso y la aplicación de los patrones quedan reflejados en los diagramas de secuencia elaborados.
+
 ## 3.4. Propósito de las clases
 
 Como paso previo a la definición detallada de las Tarjetas CRC, a continuación se enuncia brevemente el propósito  o "razón de ser" de cada una de las clases e interfaces que estructuran nuestra arquitectura:
@@ -441,7 +441,7 @@ Como paso previo a la definición detallada de las Tarjetas CRC, a continuación
 | **`Mapa`** | Estructura que gestiona las dimensiones del tablero, la visibilidad y las adyacencias entre casillas. |
 | **`Celda`** | Componente mínima del terreno que define una posición concreta, su transitabilidad y alberga una o varias entidades. |
 | **`ContenedorRecursos`** | Fuente de materias primas (madera, piedra o alimento) susceptible de ser explotada en el tablero. |
-| **`Personaje`** | Abstracción base para todas las entidades móviles, encapsulando sus atributos vitales y logísticos. |
+| **`Personaje`** | Abstracción base para todas las entidades móviles, encapsulando sus atributos y capacidades. |
 | **`Paisano`** | Unidad civil encargada de las tareas de recolección, construcción y reparación de infraestructuras. |
 | **`SoldadoAbstracto`** | Estructura base para las unidades militares que permite la inyección dinámica de equipamiento. |
 | **`Soldado`** | Unidad militar con capacidad ofensiva para atacar tanto personajes como edificios. |
@@ -605,7 +605,7 @@ A continuación, se presentan las tarjetas de las clases e interfaces que confor
 
 A lo largo de la Fase de Construcción, y especialmente durante la segunda iteración, la incorporación de los distintos patrones de diseño modificó notablemente la interacción entre clases. Al delegar responsabilidades, el flujo de mensajes tuvo cambios notables en un nuevo esquema de responsabilidades descentralizadas.
 
-Para ilustrar esta interacción entre clases y entidades a continuación se presentan los modelos de comportamiento de tres de los casos de uso más representativos del proyecto. Cada uno de estos diagramas de secuencia expone cómo la clase `Partida` ejerce su labor de controlador y cómo los objetos colaboran entre sí haciendo un uso intensivo de los patrones estructurales y de comportamiento previamente justificados.
+Para ilustrar esta interacción entre clases y entidades a continuación se presentan los modelos de comportamiento de varios casos de uso representativos del proyecto. Cada uno de estos diagramas de secuencia expone cómo la clase `Partida` ejerce su labor de controlador y cómo los objetos colaboran entre sí haciendo un uso intensivo de los patrones estructurales y de comportamiento previamente justificados.
 
 ### CASO DE USO: CU15 - Ser Atacado por Torre
 
@@ -615,7 +615,7 @@ Es en esta interacción donde se fundamenta el uso del patrón de diseño Observ
 
 Si la comprobación de afiliación confirma que el personaje es efectivamente un enemigo, el flujo avanza y la Torre materializa el ataque llamando al método serAtacadoPorTorre(capacidadOfensiva) directamente sobre el Paisano (capacidadOfensiva es un atributo de la Torre, la estadística de daño total que inflige en un elemento enemigo si lo ataca). El personaje procesa el impacto invocando su propio método interno reducirSalud(dañoEfectuado). Tras aplicar el daño, el diagrama muestra otro fragmento condicional final para verificar la salud resultante del objetivo tras el ataque. Si la salud del personaje desciende a cero o menos ([salud <= 0]), el sistema interrumpe el flujo normal e introduce una referencia (ref) delegando el resto del proceso al caso de uso encargado de "desaparecer" a una entidad (Eliminar Personaje). Si, por el contrario, el personaje logra sobrevivir al impacto ([salud > 0]), el proceso de ataque concluye correctamente y se devuelve una confirmación (OK), cerrando el ciclo de la notificación.
 
-![Diagrama de secuencia 2](./imgs/DiagramaSecuencia_SerAtacadoPorTorre.jpg)
+\ ![Diagrama de secuencia 1](./imgs/DiagramaSecuencia_SerAtacadoPorTorre.jpg)
 
 
 
@@ -628,7 +628,7 @@ Es en este punto donde hacemos uso del patrón de diseño State para gestionar e
 
 Durante esta transición, el diagrama contempla dos bloques fundamentales para el correcto funcionamiento del juego. En primer lugar, se observa la limpieza de dependencias ligada al patrón Observer: si el edificio que acaba de ser destruido actuaba como observador del entorno, este se desuscribe de la Celda llamando al método eliminar() para dejar de recibir notificaciones. En segundo lugar, se gestiona a los supervivientes: si el edificio estaba ocupado, la Partida recupera la lista de personajes refugiados en su interior y, mediante un bucle iterativo, procede a ejecutar la lógica para expulsarlos hacia celdas adyacentes. Finalmente, tras vaciar la estructura, la Partida ordena a la celda actualizar su presentación visual, refresca el mapa global en la interfaz y devuelve un mensaje confirmando que la demolición se ha procesado correctamente.
 
-![Diagrama de secuencia 2](./imgs/DiagramadeClases_DestruirEdificio.jpg)
+\ ![Diagrama de secuencia 2](./imgs/DiagramadeClases_DestruirEdificio.jpg)
 
 
 ### CASO DE USO: CU17 - Almacenar Recursos
@@ -642,7 +642,7 @@ Si la unidad resulta ser un personaje individual, la partida le solicita la cant
 
 En caso de la unidad ser un grupo, el sistema se apoya en la estructura jerárquica del patrón Composite para desplegar un bucle que itera sobre todos y cada uno de los personajes que componen dicho grupo. La partida extrae individualmente los recursos de cada integrante y los envía a la ciudadela realizando por cada uno la misma comprobación de capacidad descrita anteriormente y vaciando sus inventarios paso a paso si el almacenamiento es exitoso. Finalmente, se devuelve un mensaje de confirmación final al jugador indicando que todo el proceso ha terminado correctamente.
 
-![Diagrama de secuencia 3](./imgs/DiagramaSecuencia_AlmacenarRecursos.jpg)
+\ ![Diagrama de secuencia 3](./imgs/DiagramaSecuencia_AlmacenarRecursos.jpg)
 
 ### CASO DE USO: C02 - Mover Entidad
 
@@ -651,7 +651,7 @@ El flujo del diagrama de secuencia comienza cuando el jugador solicita mover un 
 
 Justo en este momento es donde se implementa el patrón de diseño Observador. Esto se consigue haciendo que la celda actúe como un sujeto observable. Cuando la partida ejecuta la función para situar al personaje en la celda, esta misma celda hace una llamada interna a su método notificar(). Este método se encarga de avisar automáticamente a cualquier elemento externo que esté vigilando esa celda, que en este caso son las torres enemigas que actúan como observadores. Gracias a esta notificación, la torre detecta la intrusión en su área de alcance e inicia de inmediato su proceso de ataque sobre el personaje sin necesidad de que la celda sepa como atacar ni quién la vigila. Tras esto, la partida termina el proceso vinculando la nueva celda al personaje y ejecutando una actualización de la interfaz del mapa y enviando finalmente un mensaje de confirmacion al jugador.
 
-![Diagrama de secuencia 4](./imgs/DiagramaSecuencia_MoverPersonaje.jpg)
+\ ![Diagrama de secuencia 4](./imgs/DiagramaSecuencia_MoverPersonaje.jpg)
 
 ### CASO DE USO: CU4 - Generar Personaje
 
@@ -660,7 +660,7 @@ El diagrama de secuencia muestra cómo interactúan los objetos en el sistema pa
 
 En este caso de uso se aplica el patrón de diseño Factory Method para resolver la creación de los distintos tipos de personajes, de forma que la partida no necesite saber detalles del proceso de creación. Según las reglas del proyecto, dependiendo del edificio seleccionado se generará un tipo de unidad u otro: las ciudadelas crean paisanos y los cuarteles crean soldados. Al aplicar el patrón Factory Method, la superclase abstracta Edificio (el creador base) define el método generarPersonaje(), pero delega en sus subclases la decisión exacta de qué instancia crear. De este modo, la clase Partida no necesita conocer los detalles de instanciación ni utilizar sentencias condicionales para determinar la unidad; simplemente llama al método sobre un Edificio. En tiempo de ejecución, si el edificio es una Ciudadela, este sobreescribirá el método para devolver un nuevo Paisano, mientras que si es un Cuartel, devolverá un Soldado. Esto mantiene la lógica de la Partida limpia y permite que en el futuro se incorporen nuevos edificios y personajes sin tener que alterar el código existente.
 
-![Diagrama de secuencia 5](./imgs/DiagramaSecuencia_GenerarPersonaje.jpg)
+\ ![Diagrama de secuencia 5](./imgs/DiagramaSecuencia_GenerarPersonaje.jpg)
 
 ### CASO DE USO: CU08 - Cargar Tablero
 
@@ -668,7 +668,7 @@ El diagrama de secuencia muestra cómo interactúan los objetos en el sistema pa
 
 En este caso de uso se aplican de forma complementaria los patrones de diseño Strategy y DAO (Data Access Object). Por un lado, se utiliza el patrón Strategy para resolver la variabilidad en la generación del tablero, de modo que la clase Partida (el contexto) no necesita conocer los detalles de implementación; simplemente interactúa con la interfaz ICargadorMapa. En este escenario concreto, se ejecuta la estrategia Precreado. Por otro lado, para evitar que esta estrategia acople la lógica del juego con la lógica de persistencia, se introduce el patrón DAO. La clase Precreado utiliza el objeto DAO para aislar y centralizar la responsabilidad de acceder al sistema de archivos (o base de datos). Esto permite que el acceso a la información almacenada esté totalmente desacoplado, asegurando que si en el futuro se cambia el formato de guardado de los mapas o se añade una nueva forma de generarlos, la clase Partida no tendrá que ser modificada en absoluto.
 
-![Diagrama de secuencia 6](./imgs/DiagramaSecuencia_CargarTablero.jpg)
+\ ![Diagrama de secuencia 6](./imgs/DiagramaSecuencia_CargarTablero.jpg)
 
 ### CASO DE USO: CU16 - Reparar edificio
 
@@ -680,7 +680,7 @@ Es en la ejecución de la reparación donde entra en juego nuevamente el patrón
 
 Tras procesar la reparación, el objeto de estado devuelve una confirmación de éxito (OK) al paisano. Este, a su vez, traslada la confirmación a la Civilizacion, y esta a la Partida, cerrando finalmente la secuencia con un último mensaje (OK) devuelto al Jugador, indicando que todo el proceso de reparación se ha completado satisfactoriamente.
 
-![Diagrama de secuencia 7](./imgs/DiagramaSecuencia_RepararEdificio.jpg)
+\ ![Diagrama de secuencia 7](./imgs/DiagramaSecuencia_RepararEdificio.jpg)
 
 ## 4. Fase de Transición
 
